@@ -1,4 +1,5 @@
-package PACKAGE_NAME;
-
-public record SenhaInavalidaException() {
+public class SenhaInavalidaException extends RuntimeException {
+    public SenhaInavalidaException(String mensagem) {
+        super(mensagem);
+    }
 }
